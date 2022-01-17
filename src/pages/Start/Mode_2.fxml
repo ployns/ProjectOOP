@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="PaneMode_2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="800.0" style="-fx-background-color: lightpink; -fx-background-radius: 50; -fx-border-width: 4; -fx-border-radius: 50; -fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.Start.Mode_2_Controller">
+    <children>
+        <Rectangle fx:id="HowToPlayButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="15.0" onMouseClicked="#clickedToHowToPlay" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Rectangle>
+        <Rectangle fx:id="ConfirmButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="590.0" onMouseClicked="#clickedToConfirm" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Rectangle>
+      <Label layoutX="192.0" layoutY="281.0" prefHeight="119.0" prefWidth="415.0" text="COMMING SOON" textFill="#ef0000">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+    </children>
+</Pane>

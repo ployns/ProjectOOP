@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-image: url(&quot;assets/MainMenu/Background.png&quot;); -fx-background-size: 1280;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.Start.Start_Controller">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="365.0">
+         <children>
+            <Rectangle fx:id="EasyButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="120.0" layoutX="80.0" layoutY="80.0" onMouseClicked="#chooseEasyMode" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+<!--            <Label alignment="CENTER" layoutX="80.0" layoutY="80.0" prefHeight="54.0" prefWidth="135.0" text="Easy">-->
+<!--               <font>-->
+<!--                  <Font size="36.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+            <Rectangle fx:id="ClassicButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="120.0" layoutX="80.0" layoutY="240.0" onMouseClicked="#chooseClassicMode" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Label alignment="CENTER" layoutX="79.0" layoutY="240.0" prefHeight="47.0" prefWidth="150.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="MainMenuButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="80.0" layoutX="80.0" layoutY="680.0" onMouseClicked="#clickedToMainMenu" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="365.0" prefHeight="800.0" prefWidth="915.0">
+         <children>
+            <StackPane fx:id="StackPaneMode" layoutX="35.0" layoutY="80.0">
+               <children>
+                  <AnchorPane fx:id="AnchorPaneMode" prefHeight="680.0" prefWidth="800.0" style="-fx-background-image: url(&quot;assets/Start/#BGHowto.png&quot;); -fx-background-radius: 50; -fx-border-width: 4; -fx-border-color: black; -fx-border-radius: 50;" />
+               </children>
+            </StackPane>
+            <Rectangle fx:id="textContainer" arcHeight="63.0" arcWidth="63.0" fill="#ffd362" height="63.0" layoutX="35.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" width="800.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

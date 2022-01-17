@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.Start.Mode_1_HowToPlay_Controller">
+   <children>
+      <Pane fx:id="PaneMode_1_HowToPlay" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="800.0" style="-fx-background-color: lightsalmon; -fx-background-radius: 50; -fx-border-width: 4; -fx-border-radius: 50; -fx-border-color: black;">
+          <children>
+            <HBox fx:id="imageContainer" prefHeight="680.0" prefWidth="800.0" />
+              <Rectangle fx:id="BackButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="590.0" onMouseClicked="#clickedToBack" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="PreviousButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="15.0" layoutY="303.0" onMouseClicked="#clickedToPrevious" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="100.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="NextButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="685.0" layoutY="303.0" onMouseClicked="#clickedToNext" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="100.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+          </children>
+      </Pane>
+   </children>
+</StackPane>

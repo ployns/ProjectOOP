@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.Start.Mode_1_Setting_Controller">
+    <children>
+        <Pane fx:id="PaneMode_1_Setting" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="785.0" style="-fx-background-image: url(&quot;assets/Start/BGsetplay.png&quot;); -fx-background-radius: 50; -fx-border-width: 4; -fx-border-radius: 50; -fx-border-color: black;">
+            <children>
+                <Rectangle fx:id="BackButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="14.0" onMouseClicked="#clickedToBack" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Rectangle fx:id="StartGamePlayButton" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="75.0" layoutX="275.0" layoutY="590.0" onMouseClicked="#clickedToGamePlay" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="250.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Rectangle>
+            <Text layoutX="82.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="จำนวนผู้เล่น">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+            <Text layoutX="564.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="rb3Player" layoutX="307.0" layoutY="288.0" mnemonicParsing="false" onAction="#radioSelect" prefHeight="51.0" prefWidth="118.0" text="3 Player">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgPlayer" />
+               </toggleGroup>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb4Player" layoutX="425.0" layoutY="304.0" mnemonicParsing="false" onAction="#radioSelect" text="4 Player" toggleGroup="$tgPlayer">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rb5Player" layoutX="553.0" layoutY="304.0" mnemonicParsing="false" onAction="#radioSelect" text="5 Player" toggleGroup="$tgPlayer">
+               <font>
+                  <Font size="14.0" />
+               </font></RadioButton>
+            <Label fx:id="lb1" layoutX="425.0" layoutY="389.0" prefWidth="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

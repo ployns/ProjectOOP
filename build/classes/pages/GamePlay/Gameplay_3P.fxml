@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPaneGamePlay_3P" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-image: url(&quot;assets/Play/BGPlay.png&quot;);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.GamePlay.Gameplay_3P_Controller">
+    <children>
+        <Pane layoutX="975.0" layoutY="54.0" prefHeight="372.0" prefWidth="254.0">
+            <children>
+                <Rectangle fx:id="imageDropCard_Bot_1_1" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutY="160.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                <Rectangle fx:id="imageDropCard_Bot_1_2" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="87.0" layoutY="160.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                <Rectangle fx:id="imageDropCard_Bot_1_3" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="174.0" layoutY="160.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                <Rectangle fx:id="Rectangle_Bot1" arcHeight="5.0" arcWidth="5.0" fill="#8dc5fa" height="153.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+                <Label fx:id="bot_1" layoutX="30.0" layoutY="16.0" prefHeight="57.0" prefWidth="184.0" text="bot_1">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cardLeft_Bot_1" layoutX="23.0" layoutY="80.0" prefHeight="57.0" prefWidth="184.0" text="card left">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dropCard_Bot_1" alignment="CENTER" layoutX="14.0" layoutY="291.0" prefHeight="67.0" prefWidth="217.0" text="drop card">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="51.0" layoutY="50.0" prefHeight="372.0" prefWidth="254.0">
+            <children>
+                <Rectangle fx:id="imageDropCard_Bot_2_1" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutY="163.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                <Rectangle fx:id="imageDropCard_Bot_2_2" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="87.0" layoutY="163.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                <Rectangle fx:id="imageDropCard_Bot_2_3" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="174.0" layoutY="163.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                <Rectangle fx:id="Rectangle_Bot2" arcHeight="5.0" arcWidth="5.0" fill="#8dc5fa" height="153.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+                <Label fx:id="bot_2" layoutX="30.0" layoutY="16.0" prefHeight="57.0" prefWidth="184.0" text="bot_2">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cardLeft_Bot_2" layoutX="23.0" layoutY="80.0" prefHeight="57.0" prefWidth="184.0" text="card left">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dropCard_Bot_2" alignment="CENTER" layoutX="19.0" layoutY="283.0" prefHeight="67.0" prefWidth="217.0" text="drop card">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="userControlPane" layoutX="229.0" layoutY="616.0" prefHeight="153.0" prefWidth="881.0">
+            <children>
+                <Rectangle fx:id="Rectangle_User" arcHeight="5.0" arcWidth="5.0" fill="#8dc5fa" height="153.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+                <Label fx:id="user" layoutX="30.0" layoutY="16.0" prefHeight="57.0" prefWidth="184.0" text="user">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cardLeft_User" layoutX="23.0" layoutY="80.0" prefHeight="57.0" prefWidth="184.0" text="card left">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                </Label>
+                <HBox fx:id="handCardUser_HBox" alignment="CENTER" layoutX="261.0" layoutY="17.0" prefHeight="120.0" prefWidth="500.0" spacing="3.0">
+               <children>
+                  <Rectangle fx:id="rectangleCard_1" arcHeight="5.0" arcWidth="5.0" fill="#4dafff" height="120.0" onMouseClicked="#indexCardRectangle_1" stroke="BLACK" strokeType="INSIDE" style="-fx-background-image: url(&quot;assets/Play/BGPlay.png&quot;);" width="80.0" />
+                  <Rectangle fx:id="rectangleCard_2" arcHeight="5.0" arcWidth="5.0" fill="#4dafff" height="120.0" onMouseClicked="#indexCardRectangle_2" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle fx:id="rectangleCard_3" arcHeight="5.0" arcWidth="5.0" fill="#4dafff" height="120.0" onMouseClicked="#indexCardRectangle_3" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle fx:id="rectangleCard_4" arcHeight="5.0" arcWidth="5.0" fill="#4dafff" height="120.0" onMouseClicked="#indexCardRectangle_4" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle fx:id="rectangleCard_5" arcHeight="5.0" arcWidth="5.0" fill="#4dafff" height="120.0" onMouseClicked="#indexCardRectangle_5" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                  <Rectangle fx:id="rectangleCard_6" arcHeight="5.0" arcWidth="5.0" fill="#4dafff" height="120.0" onMouseClicked="#indexCardRectangle_6" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+               </children>
+                </HBox>
+            <Rectangle fx:id="dropCard" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="796.0" layoutY="12.0" onMouseClicked="#dropCardButton" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="100.0">
+               
+            </Rectangle>
+            <Rectangle fx:id="drawCard" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="796.0" layoutY="60.0" onMouseClicked="#drawCardButton" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="100.0">
+              
+            </Rectangle>
+            <Rectangle fx:id="checkMate" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="796.0" layoutY="113.0" onMouseClicked="#checkmateButton" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" stroke="BLACK" strokeType="INSIDE" width="100.0">
+              
+            </Rectangle>
+            </children>
+        </Pane>
+        <Label fx:id="communityCard_Label" alignment="CENTER" layoutX="599.0" layoutY="274.0" prefHeight="67.0" prefWidth="180.0" text="community card">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Label fx:id="dropCard_User" alignment="CENTER" layoutX="343.0" layoutY="530.0" prefHeight="67.0" prefWidth="217.0" text="drop card">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="imageCommunityCard" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="649.0" layoutY="342.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+        <Rectangle fx:id="imageDropCard_User_1" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="601.0" layoutY="503.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+        <Rectangle fx:id="imageDropCard_User_2" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="688.0" layoutY="503.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+        <Rectangle fx:id="imageDropCard_User_3" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="775.0" layoutY="503.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+      <Rectangle fx:id="imageDeckCard" arcHeight="5.0" arcWidth="5.0" fill="#d1f9ff" height="120.0" layoutX="649.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+      <Label fx:id="communityCardLeft_Label" alignment="CENTER" layoutX="599.0" layoutY="124.0" prefHeight="67.0" prefWidth="180.0" text="community card left" textFill="#fa0909">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Pane fx:id="finishGamePane" layoutX="10.0" layoutY="10.0" prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <Rectangle fx:id="BGfinish" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="316.0" layoutX="358.0" layoutY="245.0" stroke="BLACK" strokeType="INSIDE" width="577.0" />
+            <Button layoutX="573.0" layoutY="465.0" mnemonicParsing="false" onAction="#clickedToScoreBoard" prefHeight="67.0" prefWidth="174.0" text="SCORE" textFill="#bf1414">
+               <font>
+                  <Font name="Arial Black" size="31.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="496.0" layoutY="355.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="FINISH GAME" textAlignment="CENTER" wrappingWidth="328.140380859375">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
